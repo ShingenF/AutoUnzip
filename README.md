@@ -2,9 +2,8 @@
 一个能监听指定文件夹内所有压缩包并自动解压的自动化程序  
 An automated program that monitors a specified folder for all compressed archives and extracts them automatically.
 
-<img width="337" height="432" alt="image" src="https://github.com/user-attachments/assets/f5993b7e-6854-45e5-9623-943205542c17" />
-<img width="407" height="432" alt="image" src="https://github.com/user-attachments/assets/e034d650-c987-441a-a41c-92f11f74d75e" />
-
+<img width="336" height="390" alt="image" src="https://github.com/user-attachments/assets/f17d8522-267e-41c9-b14a-0f934171782a" />
+<img width="407" height="390" alt="image" src="https://github.com/user-attachments/assets/1e59609f-d439-46de-9842-35bfe5dd1531" />
 
 前言：  
 作者有从各种“站”上下压缩包的需求，往往都是加密的，挨个下载再手动解压超级麻烦，怒而开发一个自动化工具。本工具使用gemini3制作，作者本人患有轻度智力障碍，文化程度属于文盲或半文盲。如果你看见程序中有奇怪的写法，那一定是我的问题。如有非常弱智的操作请务必通过issue告知。这里提前感谢大佬们的指导！
