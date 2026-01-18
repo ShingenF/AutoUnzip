@@ -1,37 +1,32 @@
 # AutoUnzip
 
 <div align="right">
-  <a href="README.md">
-    <img src="https://img.shields.io/badge/Language-English-red?style=for-the-badge" alt="English Version">
+  <a href="README_CN.md">
+    <img src="https://img.shields.io/badge/Language-中文-blue?style=for-the-badge" alt="中文说明">
   </a>
 </div>
 
-一个能监听指定文件夹内所有压缩包并自动解压的自动化程序
+An automated program that monitors a specified folder for all compressed archives and extracts them automatically.
 
 <div align="center">
   <img width="336" height="390" alt="image" src="https://github.com/user-attachments/assets/f17d8522-267e-41c9-b14a-0f934171782a" />
   <img width="407" height="390" alt="image" src="https://github.com/user-attachments/assets/1e59609f-d439-46de-9842-35bfe5dd1531" />
 </div>
 
-### 前言：
-作者有从各种“站”上下压缩包的需求，往往都是加密的，挨个下载再手动解压超级麻烦，怒而开发一个自动化工具。本工具使用gemini3制作，作者本人患有轻度智力障碍，文化程度属于文盲或半文盲。如果你看见程序中有奇怪的写法，那一定是我的问题。如有非常弱智的操作请务必通过issue告知。这里提前感谢大佬们的指导！
+> **Note:** The English version is machine-translated. Please take the Chinese version as the authoritative standard. Corrections are welcome!
 
-**注意**：使用本程序必须安装7zip，下载方式：https://www.7-zip.org/  建议安装到默认路径。如果7zip安装在特殊路径下，可在“基础设置”中修改。
+### Introduction
+An automated program that monitors specified folders for compressed archives and extracts them automatically. 
 
-### 功能描述：
-1.  可设置一组文件夹路径，开始监听后自动解压缩内部的压缩包文件。
-2.  如果你经常下载密码相同的多个压缩包，可将常用密码记入密码本，自动解压过程中会自动尝试。
-3.  “智能解压”可在包内文件/文件夹数量多余一个时，自动将所有文件解压到单独文件夹中，避免零碎文件泄露。建议开启。
-4.  线程一栏为调用的cpu线程，如遇解压速度慢可增加，最大不建议超过cpu物理线程。
+**Development Note:** This tool was created with the assistance of **Gemini 3**. The author is a beginner. If you see strange coding styles, that is expected. Feedback via Issues is welcome!
 
-### 警告：
-1.  文件发布形式是一个压缩好的文件夹，不建议将exe复制出来运行，因为你的所有配置信息都会通过生成一个json来保存。
-    如果将exe单独复制出来运行，非常容易误删json文件导致所有保存的文件路径、密码全部丢失。
-2.  如无必要，切勿关闭“严格模式”。在你使用百度网盘/aria2等下载工具时，它们可能会创建一个带有压缩包后缀的临时文件。严格模式可以避免对临时文件进行不必要的尝试，以及在下载后漏掉。
-3.  如无必要，不要关闭“开始监听后解压已有压缩包”。正如名字所讲，开启该功能后可避免监听的文件夹内有未被解压的压缩包。
-4.  默认显示的日志为精简日志，完整的日志在点击“显示完整日志”后会显示出来。精简日志可避免嗅探文件导致日志产生大量重复记录。
+### Key Features
+* **Folder Monitoring:** Set specific folders to watch. Archives are extracted instantly upon detection.
+* **Password Book:** Automatically tries saved passwords for encrypted archives. Ideal for frequent downloads from the same source.
+* **Smart Extraction:** Automatically creates a subfolder if the archive contains multiple files to keep your directory clean.
+* **Threads:** Adjustable CPU thread usage for faster extraction.
 
-### 常见用法：
-1.  你需要不时下载一些数量较多、固定来源、固定密码的压缩包。直接下载到监听的文件夹中，可以避免反复点击解压，以及“我是不是漏包了”诸如此类的疑问
-2.  你希望你的下载文件夹能自己把下载的压缩包解压出来，并且希望不要残留一堆不知道内容是什么的压缩包等着自己来清理
-3.  你要处理数量众多的压缩包，有时候密码还各不相同，一个个点过去再输密码很麻烦
+### ⚠️ Warnings & Tips
+1.  **Dependencies:** You must have [7-Zip](https://www.7-zip.org/) installed.
+2.  **Portable Mode:** Do not move the `.exe` file out of its folder. Configuration is saved in a local `.json` file; moving the executable will cause data loss.
+3.  **Strict Mode:** Keep this **ON** to avoid conflicts with temporary files created by download managers (like IDM, Aria2, BaiduNetdisk).
