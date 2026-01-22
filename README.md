@@ -9,7 +9,6 @@
 An automated program that monitors a specified folder for all compressed archives and extracts them automatically.
 
 <div align="center">
-  <img width="336" height="390" alt="image" src="https://github.com/user-attachments/assets/f17d8522-267e-41c9-b14a-0f934171782a" />
   <img width="407" height="390" alt="image" src="https://github.com/user-attachments/assets/1e59609f-d439-46de-9842-35bfe5dd1531" />
 </div>
 
